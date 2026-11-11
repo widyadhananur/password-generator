@@ -1,0 +1,94 @@
+:root {
+    --bg-main: #1C1C1C;
+    --card-bg: #1e293b;
+    --text-primary: #ffffff;
+    --text-secondary: #D5D4D8;
+    --accent-color: #4ADF86;
+    --accent-hover: #059669;
+    --box-bg: #1F2937;
+    --box-border: #273549;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", "Inter", sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 40px 32px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+ h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+h1 span {
+    color: var(--accent-color);
+    display: block;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    margin: 12px 0 28px 0;
+    font-size: 0.9rem;
+}
+
+.generate-btn {
+    background-color: var(--accent-color);
+    color: white;
+    text-shadow: 0 0 1px black;
+    border: none;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.generate-btn:hover {
+    background-color: #059669;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #2f3e53;
+    margin: 28px 0;
+}
+
+.results {
+    display: flex;
+    gap: 16px;
+}
+
+
+.password-box {
+    flex: 1;
+    min-height: 40px;
+    background-color: var(--box-bg);
+    color: var(--accent-color);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+}
